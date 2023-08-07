@@ -4,7 +4,7 @@ require("dotenv").config();
 //set up express.js
 const express = require("express");
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT;
 app.use(express.json()); //buat parse body json di request htpp
 const productRoutes = require("./routes/product.route");
 const videoRoutes = require("./routes/video.route");
